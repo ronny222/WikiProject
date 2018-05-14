@@ -1,0 +1,25 @@
+.bg {
+  height: 500px;
+  background-image: url("football.jpg");
+}
+
+.newHeader {
+  padding: 26px 26px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 7px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+}
+
+.newContent {
+  width: 100%;
+  padding: 26px 26px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 7px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+

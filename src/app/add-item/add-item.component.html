@@ -1,0 +1,16 @@
+<body class="bg">
+<div>
+  <label><b>Add a New Value:</b>
+    <br>
+    <br>
+    <input class="newHeader" #header placeholder="Header"/>
+    <br>
+    <input class="newContent" #contnet placeholder="Contnet" size="50">
+  </label>
+  <br>
+  <br>
+  <button class="newHeader" (click)="addNew(header.value,contnet.value)">
+    Add
+  </button>
+</div>
+</body>

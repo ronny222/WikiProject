@@ -1,0 +1,10 @@
+<body class="bg">
+<u><h2>WIKI Topics: </h2></u>
+<li *ngFor="let itemOnlist of newList">
+  <a routerLink="/disply-area/{{itemOnlist.id}}">
+    {{itemOnlist.header}}
+  </a>
+</li>
+<div>
+</div>
+</body>
