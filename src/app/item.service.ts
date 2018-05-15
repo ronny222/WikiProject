@@ -22,19 +22,16 @@ export class ItemService {
 
   addItem(newItem: ListItem) {
 
-    let i,counter =0;
-    for( i=0; i<myListItems.length; i++)
-    {
-      if(newItem.header == myListItems[i].header)
-      {
+    let i, counter = 0;
+    for (i = 0; i < myListItems.length; i++) {
+      if (newItem.header == myListItems[i].header) {
         counter++;
       }
     }
-    if(counter == 0)
-    {
+    if (counter == 0) {
       this.getItems().push(newItem);
     }
-    else{
+    else {
 
       alert("Error");
       counter = 0;
@@ -49,6 +46,10 @@ export class ItemService {
     }
     return this.obj;
   }
+
+
+
+
 }
 
 

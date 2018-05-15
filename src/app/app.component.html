@@ -1,12 +1,16 @@
+<body class="bg">
 <div class="div" style="text-align:center">
   <button routerLink="/update-item">Update a Value</button>
   <button routerLink="/add-item">Add a New Value</button>
-  <button routerLink="">Display Values</button>
+  <button (click)="getItNow()" routerLink="">Display Values</button>
 </div>
 <div style="text-align:center">
   <h1>
     <u>Welcome to WIKI FOOTBALL!</u>
   </h1>
 </div>
+<br>
+<br>
 <router-outlet></router-outlet>
+</body>
 

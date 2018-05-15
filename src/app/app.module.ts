@@ -10,6 +10,7 @@ import {AppRoutingModule} from './/app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {AddItemComponent} from './add-item/add-item.component';
 import {UpdateItemComponent} from './update-item/update-item.component';
+import {FilterPipe} from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {UpdateItemComponent} from './update-item/update-item.component';
     ListComponent,
     DisplyAreaComponent,
     AddItemComponent,
-    UpdateItemComponent
+    UpdateItemComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

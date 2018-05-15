@@ -7,3 +7,9 @@
 
   background-color: blue;
 }
+
+.bg {
+
+  height: 500px;
+  background-image: url("football.jpg");
+}

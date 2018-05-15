@@ -31,9 +31,9 @@ export class DisplyAreaComponent implements OnInit {
   ngOnInit(): void {
     this.getItem();
   }
-
   getItem(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
+    const id = this.route.snapshot.paramMap.get('id');
+    console.log(id);
     this.itemService.getItem(id)
       .subscribe(item => this.myNewItem = item).unsubscribe();
 

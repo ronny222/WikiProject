@@ -3,17 +3,17 @@ import {ListItem} from "./listItem";
 export const myListItems: ListItem[] = [
   {
     id: 1,
-    header: 'Leeds United',
+    header: 'leeds united',
     content: 'Leeds United Football Club is a professional association football club in Leeds, West Yorkshire, England.'
   },
   {
     id: 2,
-    header: 'Aston Villa',
+    header: 'aston villa',
     content: 'Aston Villa Football Club (nicknamed Villa, The Villa, The Villans and The Lions)is a professional football club in Aston, Birmingham, that plays in the Championship, the second level of English football.'
   },
   {
     id: 3,
-    header: 'QPR',
+    header: 'qpr',
     content: 'Queens Park Rangers Football Club, commonly abbreviated to QPR, is a professional association football club based in White City, London. The team currently plays in the Championship, the second tier of English football.'
   },
   {
