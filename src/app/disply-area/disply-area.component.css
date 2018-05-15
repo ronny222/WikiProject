@@ -12,3 +12,8 @@ input[type=text] {
   border-radius: 8px;
   box-sizing: border-box;
 }
+
+div {
+  border: double;
+}
+
