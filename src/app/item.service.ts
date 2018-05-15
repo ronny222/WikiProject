@@ -21,9 +21,24 @@ export class ItemService {
   }
 
   addItem(newItem: ListItem) {
-    console.log(newItem)
-    this.getItems().push(newItem);
 
+    let i,counter =0;
+    for( i=0; i<myListItems.length; i++)
+    {
+      if(newItem.header == myListItems[i].header)
+      {
+        counter++;
+      }
+    }
+    if(counter == 0)
+    {
+      this.getItems().push(newItem);
+    }
+    else{
+
+      alert("Error");
+      counter = 0;
+    }
   }
   getIt(): string[]
   {
@@ -31,7 +46,6 @@ export class ItemService {
     for(i=0; i<myListItems.length; i++)
     {
       this.obj[i] = myListItems[i].header;
-      console.log(this.obj[i]);
     }
     return this.obj;
   }
@@ -40,3 +54,5 @@ export class ItemService {
 
 
 }
+
+
