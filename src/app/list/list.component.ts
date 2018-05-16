@@ -16,8 +16,7 @@ export class ListComponent implements OnInit {
 
   constructor(private itemService: ItemService) {
     this.newValue = itemService.getItems();
-    this.getItems();
-    this.getItNow();
+
   }
 
   ngOnInit() {
