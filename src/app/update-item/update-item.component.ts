@@ -11,11 +11,9 @@ export class UpdateItemComponent implements OnInit {
 
   newList: ListItem[];
   newValue: ListItem[];
-
   constructor(private itemService: ItemService) {
     this.newValue = itemService.getItems();
   }
-
   ngOnInit() {
 
     this.getItems();
@@ -23,6 +21,6 @@ export class UpdateItemComponent implements OnInit {
 
   getItems(): void {
     this.newList = this.itemService.getItems();
-
   }
+
 }

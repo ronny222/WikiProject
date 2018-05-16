@@ -14,3 +14,18 @@
   text-decoration: underline;
 
 }
+
+.newContent {
+  width: 100%;
+  padding: 26px 26px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 7px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.newContent2 {
+  width: 20%;
+
+}
