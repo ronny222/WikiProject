@@ -24,7 +24,6 @@ export class AddItemComponent implements OnInit {
       header: header1,
       content: content1
     };
-    console.log(this.newObj);
     this.itemService.addItem(this.newObj);
   }
 
