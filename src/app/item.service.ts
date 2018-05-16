@@ -47,9 +47,17 @@ export class ItemService {
     return this.obj;
   }
 
-
-
-
+  check() {
+    let i, j, count = 0;
+    for (i = 0; i < myListItems.length; i++) {
+      for (j = 1; j <= myListItems.length; j++) {
+        if (myListItems[i].header == myListItems[j + count].header) {
+          alert("error - there are 2 or more HEADERS with the same value");
+        }
+      }
+      count++;
+    }
+  }
 }
 
 
