@@ -45,7 +45,6 @@ import {FilterPipe} from './filter.pipe';
     ),
     AppRoutingModule,
     HttpClientModule,
-
   ],
   providers: [
     ItemService
