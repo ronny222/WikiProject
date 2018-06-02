@@ -5,7 +5,7 @@ import {ItemService} from "../item.service";
 @Component({
   selector: 'app-update-item',
   templateUrl: './update-item.component.html',
-  styleUrls: ['./update-item.component.css']
+  styleUrls: ['./update-item.component.scss']
 })
 export class UpdateItemComponent implements OnInit {
 
@@ -17,10 +17,16 @@ export class UpdateItemComponent implements OnInit {
   ngOnInit() {
 
     this.getItems();
+    this.checkIt()
   }
 
   getItems(): void {
     this.newList = this.itemService.getItems();
   }
+
+  checkIt(): void {
+    this.itemService.check();
+  }
+
 
 }

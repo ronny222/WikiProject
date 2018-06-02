@@ -9,12 +9,15 @@ import {of} from 'rxjs/observable/of';
 export class ItemService {
 
   obj: string[] = new Array("");
+
   constructor() {
   }
 
   getItems(): ListItem[] {
+
     return myListItems;
   }
+
   getItem(id: string): Observable<ListItem> {
 
     return of(myListItems.find(ListItem => ListItem.header === id));
@@ -23,25 +26,30 @@ export class ItemService {
   addItem(newItem: ListItem) {
 
     let i, counter = 0;
-    for (i = 0; i < myListItems.length; i++) {
-      if (newItem.header == myListItems[i].header) {
-        counter++;
-      }
-    }
-    if (counter == 0) {
-      this.getItems().push(newItem);
+    if (newItem.header == "") {
+      alert("Error value is empty");
+
     }
     else {
+      for (i = 0; i < myListItems.length; i++) {
+        if (newItem.header == myListItems[i].header) {
+          counter++;
+        }
+      }
+      if (counter == 0) {
+        this.getItems().push(newItem);
+      }
+      else {
 
-      alert("Error");
-      counter = 0;
+        alert("Error value already exist");
+        counter = 0;
+      }
     }
   }
-  getIt(): string[]
-  {
+
+  getIt(): string[] {
     let i;
-    for(i=0; i<myListItems.length; i++)
-    {
+    for (i = 0; i < myListItems.length; i++) {
       this.obj[i] = myListItems[i].header;
     }
     return this.obj;

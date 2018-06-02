@@ -1,16 +1,22 @@
-<body class="bg">
-<div class="div" style="text-align:center">
-  <button (click)="checkIt()" routerLink="/update-item">Update a Value</button>
-  <button (click)="checkIt()" routerLink="/add-item">Add a New Value</button>
-  <button (click)="checkIt()" routerLink="">Display Values</button>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      WIKI:
+    </p>
+    <ul class="content__container__list">
+      <li class="content__container__list__item">English Football !</li>
+      <li class="content__container__list__item">Premiership !</li>
+      <li class="content__container__list__item">Championship !</li>
+      <li class="content__container__list__item">Everything !</li>
+    </ul>
+  </div>
 </div>
-<div style="text-align:center">
-  <h1>
-    <u>Welcome to WIKI FOOTBALL!</u>
-  </h1>
+<button class="button" (click)="checkIt()" routerLink="/update-item">Update Screen</button>
+<button class="button" (click)="checkIt()" routerLink="/add-item">Add Screen</button>
+<button class="button" (click)="checkIt()" routerLink="">Display Values</button>
+<div>
+  <router-outlet></router-outlet>
 </div>
-<br>
-<br>
-<router-outlet></router-outlet>
 </body>
-

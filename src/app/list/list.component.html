@@ -1,9 +1,14 @@
-<input [(ngModel)]="searchText" placeholder="search text">
-<ul>
+<ul id="panel">
+  <input [(ngModel)]="searchText" placeholder="search text">
   <h2>WIKI Topics:</h2>
-  <li *ngFor="let c of obj| filter : searchText; let i of newList">
+  <li class="animation" *ngFor="let c of obj| filter : searchText; let i of newList">
     <a routerLink="/disply-area/{{i}}">
       {{c}}
     </a>
   </li>
 </ul>
+<br>
+<br>
+<br>
+
+

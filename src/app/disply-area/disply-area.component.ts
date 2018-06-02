@@ -7,7 +7,7 @@ import {ItemService} from "../item.service";
 @Component({
   selector: 'app-disply-area',
   templateUrl: './disply-area.component.html',
-  styleUrls: ['./disply-area.component.css']
+  styleUrls: ['./disply-area.component.scss']
 })
 export class DisplyAreaComponent implements OnInit {
 

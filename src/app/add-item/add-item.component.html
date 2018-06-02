@@ -1,15 +1,15 @@
-<body class="bg">
+<body>
 <div>
   <label><b>Add a New Value:</b>
     <br>
     <br>
-    <input class="newHeader" #header placeholder="Header"/>
+    <input class="input" #header placeholder="Header"/>
     <br>
-    <input class="newContent" #contnet placeholder="Contnet" size="50">
+    <input class="input" #contnet placeholder="Contnet" size="75">
   </label>
   <br>
   <br>
-  <button (click)="addNew(header.value,contnet.value)">
+  <button class="button" (click)="addNew(header.value,contnet.value)" routerLink="">
     Add
   </button>
 </div>
